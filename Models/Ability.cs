@@ -9,6 +9,7 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
     {
         public int AbilityId { get; set; }
         public string Name { get; set; }
+        public int AbilityType { get; set; } //TODO: Create Enum for determining if ability is hidden, or advanced.
         public string Frequency { get; set; }
         public string Effect1 { get; set; }
         public string Target { get; set; }

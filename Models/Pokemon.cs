@@ -11,9 +11,8 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string Species { get; set; } //Name Of Pokemon
         public byte[] Image { get; set; } //Bit string to hold image
         public int Level { get; set; } //Dictates level of pokemon.  May remove as level isn't stored in db and may be better stored on front end?  Need to find out how.
-        public bool Gender { get; set; } //Denotes Male or Female Gender
+        public bool Gender { get; set; } //Denotes Male or Female Gender.  TODO:  Set field to string as certain pokemon are either genderless or exclusively one gender
         public string Nature { get; set; }  //TODO: Create Enum field for nature?
-        public bool IsShiny { get; set; } //Cutting this as the image stored will not be shiny
         public string Type1 { get; set; } //First/primary type of the pokemon
         public string Type2 { get; set; } //Can be null.  Secondary type of pokemon if applicable.
         public int HPSpecies { get; set; }
@@ -22,12 +21,6 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public int SPAttSpecies { get; set; }
         public int SPDefSpecies { get; set; }
         public int SpdSpecies { get; set; }
-        public int HPTotal { get; set; }
-        public int AttTotal { get; set; }
-        public int DefTotal { get; set; }
-        public int SPAttTotal { get; set; }
-        public int SPDefTotal { get; set; }
-        public int SpdTotal { get; set; }
         public int Overland { get; set; }
         public int Sky { get; set; }
         public int Swim { get; set; }
@@ -59,7 +52,7 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public List<Move> Movelist { get; set; } //All possible moves
         public List<Habitat> Habitats { get; set; } //Lists all habitats
         public List<Capability> Capabilities { get; set; }  //Lists all Tabletop RP specific capabilities, 
-        public List<Ability> Abilities { get; set; }
+        public List<Ability> Abilities { get; set; }  //Lists all abilities possessed by a pokemon
 
         public Pokemon()
         {
