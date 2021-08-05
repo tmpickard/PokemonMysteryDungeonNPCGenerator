@@ -11,27 +11,27 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string Species { get; set; } //Name Of Pokemon
         public byte[] Image { get; set; } //Bit string to hold image
         public int Level { get; set; } //Dictates level of pokemon.  May remove as level isn't stored in db and may be better stored on front end?  Need to find out how.
-        public bool Gender { get; set; } //Denotes Male or Female Gender.  TODO:  Set field to string as certain pokemon are either genderless or exclusively one gender
-        public string Nature { get; set; }  //TODO: Create Enum field for nature?
+        public string Gender { get; set; } //Denotes Male or Female Gender or lack thereof.  
         public string Type1 { get; set; } //First/primary type of the pokemon
         public string Type2 { get; set; } //Can be null.  Secondary type of pokemon if applicable.
-        public int HPSpecies { get; set; }
-        public int AttSpecies { get; set; }
-        public int DefSpecies { get; set; }
-        public int SPAttSpecies { get; set; }
-        public int SPDefSpecies { get; set; }
-        public int SpdSpecies { get; set; }
-        public int Overland { get; set; }
-        public int Sky { get; set; }
-        public int Swim { get; set; }
-        public int Levitate { get; set; }
-        public int Burrow { get; set; }
-        public int HighJump { get; set; }
-        public int LongJump { get; set; }
-        public int Power { get; set; }
-        public string Size { get; set; }  //TODO: Create Enum field for Size.  Consider restructuring 
-        public int Weight { get; set; }
-        public string Acrobatics { get; set; }
+        public int HP { get; set; } //Denotes Hit Point calculations
+        public int Attack { get; set; } //Denotes physical attack power
+        public int Defense { get; set; } //Denotes resistance to physical attacks
+        public int SPAttack { get; set; } //Denotes energy based/distance attack power
+        public int SPDefense { get; set; } //Denotes resistance to energy based/distance attacks
+        public int Speed { get; set; } //Determines initiative, speed, etc
+        public int Overland { get; set; } //Determines movement on ground
+        public int Sky { get; set; } //Determines movement in the sky
+        public int Swim { get; set; }  //Determines movement in and underwater
+        public int Levitate { get; set; }  //Determines movement in the air without the use of wings
+        public int Burrow { get; set; }  //Determines movement while underground
+        public int HighJump { get; set; }  //Determines verticle jumping distance
+        public int LongJump { get; set; } //Determines jumping distance for clearing chasms
+        public int Power { get; set; } //Determines lifting/pushing power for large objects and obstacles
+        
+        public int Size { get; set; }  //TODO: Create Enum field for Size.  Consider restructuring 
+        public int Weight { get; set; } //Stat for determining weight
+        public string Acrobatics { get; set; } 
         public string Athletics { get; set; }
         public string Charm { get; set; }
         public string Combat { get; set; }
@@ -48,11 +48,11 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string Perception { get; set; }
         public string Stealth { get; set; }
         public string Survival { get; set; }
-        public List<Move> Moves { get; set; } //Moves learned at present
         public List<Move> Movelist { get; set; } //All possible moves
         public List<Habitat> Habitats { get; set; } //Lists all habitats
         public List<Capability> Capabilities { get; set; }  //Lists all Tabletop RP specific capabilities, 
         public List<Ability> Abilities { get; set; }  //Lists all abilities possessed by a pokemon
+        public List<Item> Items { get; set; }
 
         public Pokemon()
         {
