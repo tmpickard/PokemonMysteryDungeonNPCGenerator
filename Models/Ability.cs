@@ -7,6 +7,8 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
 {
     public class Ability
     {
+
+        public enum ABILITY_TYPE { REGULAR, HIDDEN, ADVANCED }
         public int AbilityId { get; set; }
         public string Name { get; set; }
         public int AbilityType { get; set; } //TODO: Create Enum for determining if ability is hidden, or advanced.
