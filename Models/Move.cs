@@ -17,5 +17,19 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string Range { get; set; } //Self explanitory.  Other facts can be noted here.
         public string Effects { get; set; } //Any special gimmicks will be noted here.
         public List<Pokemon> PokemonID { get; set; }  //This list will track which Pokemon objects are able to use a certain move.
+
+        public Move(int moveId, string moveName, string type, string category, int damageBase, string frequency, int accuracy, string range, string effects, List<Pokemon> pokemonID)
+        {
+            MoveId = moveId;
+            MoveName = moveName;
+            Type = type;
+            Category = category;
+            DamageBase = damageBase;
+            Frequency = frequency;
+            Accuracy = accuracy;
+            Range = range;
+            Effects = effects;
+            PokemonID = pokemonID;
+        }
     }
 }
