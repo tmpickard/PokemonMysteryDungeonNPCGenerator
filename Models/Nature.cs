@@ -11,5 +11,13 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string Name { get; set; }
         public string StatIncrease { get; set; }
         public string StatDecrease { get; set; }
+
+        public Nature(int natureId, string name, string statIncrease, string statDecrease)
+        {
+            NatureId = natureId;
+            Name = name;
+            StatIncrease = statIncrease;
+            StatDecrease = statDecrease;
+        }
     }
 }

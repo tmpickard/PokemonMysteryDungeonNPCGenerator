@@ -10,5 +10,12 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public int HabitatId { get; set; }
         public string Name { get; set; }
         public List<Pokemon> LocalPokemon { get; set; }
+
+        public Habitat(int habitatId, string name, List<Pokemon> localPokemon)
+        {
+            HabitatId = habitatId;
+            Name = name;
+            LocalPokemon = localPokemon;
+        }
     }
 }

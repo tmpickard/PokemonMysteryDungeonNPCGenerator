@@ -11,5 +11,13 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string Name { get; set; }
         public string Effect { get; set; }
         public List<Pokemon> Pokemon { get; set; }
+
+        public Capability(int capabilityId, string name, string effect, List<Pokemon> pokemon)
+        {
+            CapabilityId = capabilityId;
+            Name = name;
+            Effect = effect;
+            Pokemon = pokemon;
+        }
     }
 }

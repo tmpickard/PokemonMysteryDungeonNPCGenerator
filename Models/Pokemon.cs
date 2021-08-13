@@ -54,6 +54,56 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public List<Ability> Abilities { get; set; }  //Lists all abilities possessed by a pokemon
         public List<Item> Items { get; set; }
 
+        public Pokemon(int pokemonId, string species, byte[] image, int level, bool gender, string nature, string type1, string type2, int hPSpecies, int attSpecies, int defSpecies, int sPAttSpecies, int sPDefSpecies, int spdSpecies, int overland, int sky, int swim, int levitate, int burrow, int highJump, int longJump, int power, string size, int weight, string acrobatics, string athletics, string charm, string combat, string command, string genEd, string medEd, string occEd, string pokeEd, string techEd, string focus, string guile, string intimidate, string intuition, string perception, string stealth, string survival, List<Move> moves, List<Move> movelist, List<Habitat> habitats, List<Capability> capabilities, List<Ability> abilities) 
+        {
+            PokemonId = pokemonId;
+            Species = species;
+            Image = image;
+            Level = level;
+            Gender = gender;
+            Nature = nature;
+            Type1 = type1;
+            Type2 = type2;
+            HPSpecies = hPSpecies;
+            AttSpecies = attSpecies;
+            DefSpecies = defSpecies;
+            SPAttSpecies = sPAttSpecies;
+            SPDefSpecies = sPDefSpecies;
+            SpdSpecies = spdSpecies;
+            Overland = overland;
+            Sky = sky;
+            Swim = swim;
+            Levitate = levitate;
+            Burrow = burrow;
+            HighJump = highJump;
+            LongJump = longJump;
+            Power = power;
+            Size = size;
+            Weight = weight;
+            Acrobatics = acrobatics;
+            Athletics = athletics;
+            Charm = charm;
+            Combat = combat;
+            Command = command;
+            GenEd = genEd;
+            MedEd = medEd;
+            OccEd = occEd;
+            PokeEd = pokeEd;
+            TechEd = techEd;
+            Focus = focus;
+            Guile = guile;
+            Intimidate = intimidate;
+            Intuition = intuition;
+            Perception = perception;
+            Stealth = stealth;
+            Survival = survival;
+            Moves = moves;
+            Movelist = movelist;
+            Habitats = habitats;
+            Capabilities = capabilities;
+            Abilities = abilities;
+        }
+
         public Pokemon()
         {
 
