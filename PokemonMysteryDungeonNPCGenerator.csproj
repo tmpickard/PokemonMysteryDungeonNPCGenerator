@@ -160,6 +160,7 @@
     <Compile Include="Models\Ability.cs" />
     <Compile Include="Models\Capability.cs" />
     <Compile Include="Models\Habitat.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\LearnableMoves.cs" />
     <Compile Include="Models\Move.cs" />
     <Compile Include="Models\Nature.cs" />
