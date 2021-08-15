@@ -13,9 +13,9 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
         public string LearnMethod { get; set; } //States whether a pokemon learns a move by leveling up, TM, tutoring, egg move, etc.
         public int LearnLevel { get; set; } = 1; //Defaults as 1 unless otherwise stated.
 
-        public LearnableMoves(int learnableMoveID, int pokemonId, int moveId, string learnMethod, int learnLevel)
+        public LearnableMoves(int learnableMoveId, int pokemonId, int moveId, string learnMethod, int learnLevel)
         {
-            LearnableMoveID = learnableMoveID;
+            LearnableMoveId = learnableMoveId;
             PokemonId = pokemonId;
             MoveId = moveId;
             LearnMethod = learnMethod;
