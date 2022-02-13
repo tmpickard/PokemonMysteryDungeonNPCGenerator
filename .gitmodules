@@ -1,0 +1,3 @@
+[submodule "PTUDatabase"]
+	path = PTUDatabase
+	url = https://github.com/YotaXP/PTUDatabase.git
