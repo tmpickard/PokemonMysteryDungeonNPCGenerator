@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
 namespace PokemonMysteryDungeonNPCGenerator.Models
 {
     public class Pokemon
     {
+     
+
+
         public int PokemonId { get; set; } //Primary Key
         public string Species { get; set; } //Name Of Pokemon
         public byte[] Image { get; set; } //Bit string to hold image
@@ -106,6 +110,33 @@ namespace PokemonMysteryDungeonNPCGenerator.Models
 
         public Pokemon()
         {
+
+        }
+
+        public Pokemon RandomPokemonTypeLevel(int levelMin, int levelMax, String type1, String type2)
+        {
+            
+            //Bound levels to between 1 and 100
+            int lMin = Math.Max(levelMin, 1);
+            int lMax = Math.Min(levelMin, 100);
+
+            //If you want a PURE type Poke -- only Grass, only Fire, etc--have both types be the same
+            //I am assuming that, if a Poke is a pure-type, only type1 will be populated, and the second type will be blank
+
+            bool isPureType = type1 == type2;
+
+            List<Pokemon> pokemonList = new List<Pokemon>();
+
+            if (isPureType)
+            {
+                foreach( Pokemon /*Pokemon in the DB */)
+                {
+
+                }
+
+            }
+
+            
 
         }
 
