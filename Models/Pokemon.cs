@@ -6,6 +6,8 @@ using System.Web;
 
 namespace PokemonMysteryDungeonNPCGenerator.Models
 {
+    public static var db = PTUDatabase.Database.Load(pathToYamlFile);
+
     public class Pokemon
     {
      
